@@ -1,5 +1,7 @@
 import os
 import sys
+import json
+import time
 
 class CreateAzbn(object):
 	
@@ -43,8 +45,16 @@ class CreateAzbn(object):
 		print(s)
 		return self
 
-	def now(self, s):
-		return 0
+	def now(self):
+		return time.time()
+
+	def loadJSON(self, uid = ''):
+		"""Load JSON from uid-file in common-dir"""
+		_path = os.path.dirname(os.path.abspath(__file__)) + '/../common/' + uid + '.json';
+		d = {}
+		with open(_path) as json_data:
+			d = json.load(json_data)
+		return d
 	
 class CreateApp(object):
 	

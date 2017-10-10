@@ -22,7 +22,9 @@ def main():
 	#azbn['test'] = 27
 	#print(azbn['test'])
 	#print(azbn('test'))
-	help(azbn.echo)
+	#help(azbn.loadJSON)
+	#print(azbn.loadJSON('apps'))
+	print(azbn.now())
 
 if __name__ == '__main__':
 	main()
