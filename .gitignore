@@ -3,3 +3,4 @@ apps/*
 reports/*
 common/apps.json
 *__pycache__*
+.vscode

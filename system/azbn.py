@@ -1,4 +1,5 @@
-#import sys
+import os
+import sys
 
 class CreateAzbn(object):
 	
@@ -41,6 +42,9 @@ class CreateAzbn(object):
 		"""Echo string"""
 		print(s)
 		return self
+
+	def now(self, s):
+		return 0
 	
 class CreateApp(object):
 	
