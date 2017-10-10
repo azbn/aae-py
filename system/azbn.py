@@ -2,7 +2,7 @@
 
 class CreateAzbn(object):
 	
-	TITLE = 'Azbn Python Framework'
+	TITLE = 'Azbn App Engine for Python'
 	VERSION = '0.0.1'
 	
 	def __init__(self):
@@ -42,3 +42,14 @@ class CreateAzbn(object):
 		print(s)
 		return self
 	
+class CreateApp(object):
+	
+	def __init__(self):
+		"""Init function"""
+	
+	def __call__(self, uid):
+		"""Get module for azbn"""
+		if uid in self._mdl:
+			return self._mdl[uid]
+		else:
+			return self
