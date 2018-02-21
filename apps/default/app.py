@@ -1,4 +1,6 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
+##
+# !/usr/bin/python3
 
 import os
 import sys
@@ -22,9 +24,15 @@ def main():
 	#azbn['test'] = 27
 	#print(azbn['test'])
 	#print(azbn('test'))
+	
 	#help(azbn.loadJSON)
-	#print(azbn.loadJSON('apps'))
+	
 	print(azbn.now())
+	
+	#print(type(azbn.loadJSON('apps')))
+	
+	#data = azbn.loadJSON('apps')
+	#print(data['test'])
 
 if __name__ == '__main__':
 	main()
