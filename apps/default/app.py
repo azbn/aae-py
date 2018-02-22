@@ -4,6 +4,7 @@
 
 import os
 import sys
+import requests
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + '/../../system')
 #print(sys.path)
@@ -27,12 +28,14 @@ def main():
 	
 	#help(azbn.loadJSON)
 	
-	print(azbn.now())
+	#print(azbn.now())
 	
 	#print(type(azbn.loadJSON('apps')))
 	
 	#data = azbn.loadJSON('apps')
 	#print(data['test'])
+
+	print(requests.get('https://yandex.ru/'))
 
 if __name__ == '__main__':
 	main()
