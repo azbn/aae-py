@@ -17,10 +17,13 @@ def main():
 		print(str);
 		
 		#days_file.readlines()
+
 		#with open("test.txt") as file_handler:
 		#	for line in file_handler:
 		# 		print(line)
 
+		#l = [line.strip() for line in f]
+		
 	except Exception:
 		print('Ошибка чтения')
 	else:
