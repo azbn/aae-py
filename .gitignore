@@ -1,5 +1,3 @@
-apps/*
-!apps/default
 apps/**/*.pyc
 reports/*
 common/apps.json
